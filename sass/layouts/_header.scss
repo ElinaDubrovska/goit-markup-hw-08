@@ -80,7 +80,10 @@ position: relative;
     background-color: var(--accent-color);
     border-radius: 2px;
     display: block;
+    bottom: -5px;
+    @include desktop{
     bottom: 0px;
+    }
 }
 
 
