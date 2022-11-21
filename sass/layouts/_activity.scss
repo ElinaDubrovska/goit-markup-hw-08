@@ -1,0 +1,33 @@
+.section-activity{
+    display: none;
+    padding-bottom: 94px;
+    @include desktop{
+        display: block;
+    }
+}
+.activity__list{
+    display: flex;
+    gap: 30px;
+}
+
+.activity__thumb{
+    position: relative;
+
+}
+.activity__pretitle{
+font-family: 'Roboto';
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 370px;
+height: 70px;
+background: rgba(47, 48, 58, 0.8);
+color: #FFFFFF;
+position: absolute;
+bottom: 0;
+}

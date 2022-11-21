@@ -1,0 +1,220 @@
+.footer{
+    background-color:#2F303A ;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer__container{
+    text-align:center;
+
+    @include desktop{
+    display: flex;
+    justify-content: space-between;  
+    text-align: start;
+    }
+
+}
+.footer__info{
+    @include tablet{ 
+display: flex;
+justify-content: space-between;}
+}
+.footer__address{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    @include desktop{
+    margin-right: 70px;
+
+    }
+    
+ }
+ .footer__logo{
+    margin-bottom: 20px;
+}
+
+.footer__logo__link {
+    color: var(--primary-white-color);
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+.add-link:not(:last-child){
+    margin-bottom: 8px;
+}
+.add-box{
+    margin-bottom: 60px;
+}
+.address__link{
+    color: var(--primary-white-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;  
+    font-style: normal;
+    display: block;
+    margin-bottom: 9px;
+    transition: color var(--typical-timing-duration) var(--typical-timing-function);
+    &:hover, 
+    &:focus
+ { color: var(--accent-color);
+ }
+ } 
+.footer__link{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71; 
+    font-style: normal;
+    display: block;
+    transition: color var(--typical-timing-duration) var(--typical-timing-function);
+    &:not(:last-child){
+       margin-bottom: 9px; } 
+
+    &:hover, 
+    &:focus
+ { color: var(--accent-color);
+ }
+}
+
+
+
+.social-footer{
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+@include desktop{
+    margin-right: 93px;
+        }
+
+margin-bottom: 60px;
+
+}
+.footer__title{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-white-color);
+margin-bottom: 20px;
+}
+
+.social-footer__list{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-footer__link{
+    fill: var(--primary-white-color);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color:  rgba(255, 255, 255, 0.1);
+    transition: color var(--typical-timing-duration) var(--typical-timing-function),
+    background-color var(--typical-timing-duration) var(--typical-timing-function);
+    &:hover,
+    &:focus
+{
+    fill: var(--primary-white-color);
+    background-color:var(--accent-color);
+}
+    }
+
+.form__footer__wrap{
+    @include desktop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;}
+    }
+.form__footer__title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+    display: block;
+}
+.form__footer__input{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 450px;
+    max-width: 100%;
+    height: 50px;
+    outline: none;
+    padding-left: 16px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+   
+    @include desktop{
+        margin-right: 12px;
+        width: 358px;
+    }
+    color: var(--primary-white-color);
+    transition:  border-color var(--typical-timing-duration) var(--typical-timing-function);
+    &:hover, &:focus{
+    border-color: var(--accent-color);
+}
+    &::placeholder{
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+
+}
+}
+
+.form__footer__button{
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88; 
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    @include desktop{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;}
+}
+.form__footer__send{   
+    width: 24px;
+    height: 24px;
+    fill: var(--primary-white-color);
+}
+.form__footer__box{
+
+@include tablet{
+   display: flex; 
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+ @include desktop{
+    flex-direction: row;
+ }   
+}

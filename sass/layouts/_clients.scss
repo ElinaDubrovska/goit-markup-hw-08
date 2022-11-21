@@ -1,0 +1,47 @@
+.container.clients{
+    width: calc(#{100%} - #{30px} / #{2});
+    @include tablet {
+        width: calc(#{100%} - #{60px} / #{4})
+    
+    }
+    @include desktop{
+        width: calc(#{100%} - #{150px} / #{6})
+    
+    }
+}
+.client__list{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    gap: 30px; 
+    flex-wrap: wrap;
+
+}
+
+.client__link{
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#AFB1B8 ;
+    transition: color var(--typical-timing-duration) var(--typical-timing-function),
+    border-color var(--typical-timing-duration) var(--typical-timing-function);
+    &:hover{
+    color: var(--accent-color);    
+    border-color:var(--accent-color);
+}
+    &:focus{
+    color: var(--accent-color);    
+    border-color:var(--accent-color);
+    outline: none;
+}
+}
+
+.client__item{
+    width: 106px;
+    height: 60px;
+    fill:currentColor;
+}
