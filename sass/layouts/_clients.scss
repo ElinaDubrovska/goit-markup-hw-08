@@ -19,7 +19,8 @@
 }
 
 .client__link{
-    width: 170px;
+
+    width: 210px;
     height: 92px;
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;    
@@ -37,6 +38,12 @@
     color: var(--accent-color);    
     border-color:var(--accent-color);
     outline: none;
+}
+@include tablet{
+    width: 226px;
+}
+@include desktop{
+    width: 170px;
 }
 }
 

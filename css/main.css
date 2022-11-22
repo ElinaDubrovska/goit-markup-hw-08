@@ -79,10 +79,17 @@ body {
 .section-title {
   color: var(--text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .section {
@@ -660,8 +667,8 @@ textarea::placeholder {
   background-position: center;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 480px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -780,6 +787,11 @@ textarea::placeholder {
   text-transform: uppercase;
   margin-bottom: 10px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: start;
+  }
 }
 
 .benefits__text {
@@ -967,7 +979,7 @@ textarea::placeholder {
 }
 
 .client__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid rgb(175, 177, 184);
   border-radius: 4px;
@@ -985,6 +997,16 @@ textarea::placeholder {
   color: var(--accent-color);
   border-color: var(--accent-color);
   outline: none;
+}
+@media screen and (min-width: 768px) {
+  .client__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__link {
+    width: 170px;
+  }
 }
 
 .client__item {
@@ -1046,6 +1068,11 @@ textarea::placeholder {
 
 .add-box {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .add-box {
+    margin-bottom: 0;
+  }
 }
 
 .address__link {
