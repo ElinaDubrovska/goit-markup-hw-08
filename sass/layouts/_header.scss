@@ -13,12 +13,29 @@ padding-bottom: 24px;
     border-bottom: 1px solid #ECECEC
     }
 .header__container{
-position: relative;
+    position: relative;
      display: flex;
      align-items: center;
      padding-right: 23px;
      padding-left: 15px;
   
+    }
+    .btn-menu-open{
+        position: absolute;
+        top: -5px;
+        right: 15px;
+        display: block;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        align-items: center;
+        margin-left: auto;
+        @include tablet{
+            display: none;
+        }
+    
     }
 .navigation{
     display: flex;
@@ -138,23 +155,7 @@ margin-right: 10px;
 
 
 
-.btn-menu-open{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    display: block;
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    align-items: center;
-    margin-left: auto;
-    @include tablet{
-        display: none;
-    }
 
-}
 .btn-menu-close{
     display: inline-flex;
     background-color: transparent;
